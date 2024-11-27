@@ -3,24 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PiXELL Community portal</title>
+    <title>Donation Tracker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Community Support Tracker</h1>
+        <!-- Include shared header content -->
+        <h1>Welcome to the Donation Tracker</h1>
     </header>
-
     <nav>
+        <!-- Include shared navigation content -->
         <ul>
-            <li><a href="donation-tracker.html">Donate</a></li>
-            <li><a href="volunteer-tracker.html">Volunteer Tracker</a></li>
-            <li><a href="event-signup.html">Event Signup</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+    <main>
+        <h1>Donation Tracker</h1>
+        <form id="donation-form">
+            <label for="charity-name">Charity Name:</label>
+            <input type="text" id="charity-name" name="charityName" required>
 
+            <label for="donation-amount">Donation Amount:</label>
+            <input type="number" id="donation-amount" name="donationAmount" required>
+
+            <label for="donation-date">Date of Donation:</label>
+            <input type="date" id="donation-date" name="donationDate" required>
+
+            <label for="donor-message">Donor Comment/Message:</label>
+            <textarea id="donor-message" name="donorMessage"></textarea>
+
+            <button type="submit">Add Donation</button>
+        </form>
+    </main>
     <footer>
-        <p>All Rights Reserved</p>
+        <!-- Include shared footer content -->
+        <p>© 2024 Donation Tracker. All rights reserved.</p>
     </footer>
-    
+    <script src="donation-tracker.js"></script>
 </body>
 </html>
