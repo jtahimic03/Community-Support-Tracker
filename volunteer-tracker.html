@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiXELL Community Volunteer Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Volunteer Hours Tracker</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="donation-tracker.html">Donate</a></li>
+            <li><a href="#">Volunteer Tracker</a></li>
+            <li><a href="event-signup.html">Event Signup</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Volunteer Hours Tracker Form</h2>
+        <form id="volunteerTrackerForm" action="submit-volunteer-hours.php" method="POST">
+            <label for="charity-name">Charity Name:</label>
+            <input type="text" id="charity-name" name="charity_name" required>
+
+            <label for="hours-volunteered">Hours Volunteered:</label>
+            <input type="number" id="hours-volunteered" name="hours_volunteered" step="0.1" min="0" required>
+
+            <label for="volunteering-date">Date:</label>
+            <input type="date" id="volunteering-date" name="volunteering_date" required>
+
+            <label for="experience-rating">Volunteer Experience Rating:</label>
+            <select id="experience-rating" name="experience_rating" required>
+                <option value="">Select Rating</option>
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <button type="submit">Submit Hours</button>
+        </form>
+    </main>
+</body>
+</html>
