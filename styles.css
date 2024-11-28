@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f6f3; /* Light mint green */
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #ff6f61; /* Coral */
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navigation */
+nav {
+    background-color: #ff9478; /* Light coral */
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff; /* White */
+    border: 1px solid #c2dfd8; /* Soft green border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2a7f62; /* Deep green */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2a7f62; /* Deep green */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #c2dfd8; /* Soft green border */
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f5fffa; /* Mint cream */
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #2a7f62; /* Deep green */
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #195846; /* Darker green */
+}
+
+/* Footer */
+footer {
+    background-color: #ff6f61; /* Coral */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+ 
+header, footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+ 
+main {
+    padding: 1rem;
+}
+ 
+form {
+    margin-bottom: 2rem;
+}
+ 
+form label {
+    display: block;
+    margin-top: 0.5rem;
+}
+ 
+form input, form select, form button {
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+ 
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 0.5rem;
+}
+ 
+th {
+    background: #f4f4f4;
+}
+ 
+button {
+    cursor: pointer;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+}
+.input-control.error input,
+.input-control.error select {
+    border-color: red;
+}
+.input-control.success input,
+.input-control.success select {
+    border-color: green;
+}
+@media (max-width: 600px) {
+    #volunteerTrackerForm {
+        font-size: .8rem;
+    }
+}
