@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiXELL Community Volunteer Tracker</title>
+    <link rel="stylesheet" href="styles.css">   
+</head>
+<body>
+    <header>
+        <h1>Volunteer Hours Tracker</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="donation-tracker.html">Donate</a></li>
+            <li><a href="#">Volunteer Tracker</a></li>
+            <li><a href="event-signup.html">Event Signup</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Volunteer Hours Tracker Form</h2>
+        <div id="error"></div>
+
+        <form id="volunteerTrackerForm" action="submit-volunteer-hours.php" method="POST">
+
+            <div class="input-control">
+                <label for="charity-name">Charity Name:</label>
+                <input type="text" id="charity-name" name="charity_name">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="hours-volunteered">Hours Volunteered:</label>
+                <input type="number" id="hours-volunteered" name="hours_volunteered">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="volunteering-date">Date:</label>
+                <input type="date" id="volunteering-date" name="volunteering_date" >
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="experience-rating">Volunteer Experience Rating:</label>
+                <select id="experience-rating" name="experience_rating" >
+                    <option value="">Select Rating</option>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+                <div class="error"></div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <script src="volunteer-tracker.js"></script>
+</body>
+</html>
